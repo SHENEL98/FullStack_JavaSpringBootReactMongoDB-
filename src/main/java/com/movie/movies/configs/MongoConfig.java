@@ -1,5 +1,4 @@
-package com.movie.configs;
-
+package com.movie.movies.configs;
 
 import com.mongodb.client.MongoClient;
 
@@ -21,6 +20,6 @@ public class MongoConfig {
 
     @Bean
     public MongoTemplate mongoTemplate() {
-        return new MongoTemplate(mongoClient(), "javaspringboot");
+        return new MongoTemplate(mongoClient(), "movie-api-db");
     }
 }

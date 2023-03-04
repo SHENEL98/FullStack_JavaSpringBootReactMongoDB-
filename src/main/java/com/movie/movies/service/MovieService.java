@@ -1,5 +1,7 @@
-package com.movie.movies;
+package com.movie.movies.service;
 
+import com.movie.movies.modal.Movie;
+import com.movie.movies.repository.MovieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Service;
@@ -14,7 +16,6 @@ public class MovieService {
     @Autowired
     private MovieRepository movieRepository;
     public List<Movie> allMovies(){
-        List<Movie> movieList = movieRepository.findAll();
-        return null;
+        return movieRepository.findAll();
     }
 }
