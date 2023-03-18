@@ -1,4 +1,4 @@
-package com.movie.movies.modal;
+package com.movie.movies.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,5 +16,7 @@ public class Review {
     @Id
     private ObjectId id;
     private  String body;
+
+
 
 }
